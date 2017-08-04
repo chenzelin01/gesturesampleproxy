@@ -5,7 +5,7 @@ var _host = '279bbd16.ngrok.io'
 function request(cReq, cRes) {
     var u = url.parse(cReq.url);
     cReq.headers.host = _host;
-    cReq.headers.app = gesture;
+    cReq.headers.app = "gesture";
     var options = {
         hostname : _host,
         port     : u.port || 80,
